@@ -10,9 +10,13 @@ const app = express()
 
 // Middleware
 app.use(express.json())
-app.use(cors())
-// app.use(cors({ origin: 'https://your-frontend-domain.com' }))
-
+// app.use(cors())
+app.use(
+  cors({
+    origin:
+      'https://habit-tracker-frontend-r9luc4awq-shapneshs-projects.vercel.app',
+  })
+)
 
 // Routes
 app.use('/api/auth', require('./routes/auth'))
