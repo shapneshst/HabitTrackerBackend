@@ -13,8 +13,7 @@ app.use(express.json())
 // app.use(cors())
 app.use(
   cors({
-    origin:
-      'https://habit-tracker-frontend-r9luc4awq-shapneshs-projects.vercel.app',
+    origin: 'https://habit-tracker-frontend-tawny.vercel.app',
   })
 )
 
